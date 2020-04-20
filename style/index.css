@@ -29,11 +29,41 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    margin: 0 8vw 0 8vw;
 }
+nav .links {
+    display: flex;
+    justify-content: space-around;
+    margin: 4vw;
+}
+nav .img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+nav .img img {
+    width: 70vw;
+    height: 150px;
+}
+.links ul {
+    display: flex;
+    align-items: center;
+}
+.links ul li {
+    margin-left: 3rem;
+    list-style: none;
+}
+.links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -143,4 +173,85 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+.middle-content .boxes .box1 {
+    background-color: teal;
+}
+.middle-content .boxes .box2 {
+    background-color: gold;
+}
+.middle-content .boxes .box3 {
+    background-color: cadetblue;
+}
+.middle-content .boxes .box4 {
+    background-color: coral;
+}
+.middle-content .boxes .box5 {
+    background-color: crimson;
+}
+.middle-content .boxes .box6 {
+    background-color: forestgreen;
+}
+.middle-content .boxes .box7 {
+    background-color: darkorchid;
+}
+.middle-content .boxes .box8 {
+    background-color: hotpink;
+}
+.middle-content .boxes .box9 {
+    background-color: indigo;
+}
+.middle-content .boxes .box10 {
+    background-color: dodgerblue;
+}
+
+@media(max-width: 800px) {
+    .links {
+        flex-direction: column;
+    }
+    .links ul {
+        flex-direction: column;
+    }
+    .links ul li {
+        border: 1px solid black;
+        width: 300px;
+        text-align: center;
+        height: 30px;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+    .links ul li:hover {
+        background-color: lightgray;
+    }
+    .top-content {
+        display: inline;
+    }
+    .container {
+        width: 600px;
+    }
+    .middle-content .boxes .box {
+        width: 55%;
+        height: 300px;
+        margin: 20px 2.5%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-content .text-container {
+        width: 96%;
+        padding: 0 1%;
+        padding-bottom: 30px;  
+    }
+
+
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 400px;
+    }
+    .middle-content .boxes .box {
+        height: 200px;
+    }
 }
