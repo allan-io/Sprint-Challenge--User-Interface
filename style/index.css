@@ -34,17 +34,17 @@ body {
 }
 nav .links {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 4vw;
 }
 nav .img {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 nav .img img {
-    width: 70vw;
+    max-width: 53rem;
     height: 150px;
 }
 .links ul {
@@ -52,7 +52,7 @@ nav .img img {
     align-items: center;
 }
 .links ul li {
-    margin-left: 3rem;
+    margin-left: 4.5rem;
     list-style: none;
 }
 .links ul li a {
@@ -206,8 +206,13 @@ footer nav a {
 }
 
 @media(max-width: 800px) {
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
     .links {
         flex-direction: column;
+        justify-content: center;
     }
     .links ul {
         flex-direction: column;
@@ -219,11 +224,15 @@ footer nav a {
         height: 30px;
         border-radius: 10px;
         margin-top: 5px;
+        margin-left: 0;
     }
     .links ul li:hover {
         background-color: lightgray;
     }
     .top-content {
+        display: inline;
+    }
+    .bottom-content {
         display: inline;
     }
     .container {
@@ -243,8 +252,16 @@ footer nav a {
         padding: 0 1%;
         padding-bottom: 30px;  
     }
-
-
+    .links img {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .bottom-content .text-container {
+        margin-top: 2rem;
+    }
+    footer {
+        margin-top: 5rem;
+    }
 }
 
 @media(max-width: 500px) {
